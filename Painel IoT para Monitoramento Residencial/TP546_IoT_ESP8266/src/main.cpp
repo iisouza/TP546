@@ -37,8 +37,8 @@
 //                                         Bibliotecas utilizadas no projeto.                                         //
 // ****************************************************************************************************************** //
 #define BLYNK_PRINT Serial
-#define BLYNK_AUTH_TOKEN    "Em0B-MInJWFilaq0x6pygk62KqiBtB0k"
-#define BLYNK_TEMPLATE_ID   "TMPL2Y5u8Qixt"
+#define BLYNK_AUTH_TOKEN    "********************************"
+#define BLYNK_TEMPLATE_ID   "*************"
 #define BLYNK_TEMPLATE_NAME "TP546 IoT ESP8266"
 
 #include <Servo.h>              // Movimento Servo Motor.        
@@ -55,17 +55,17 @@
 struct WiFiCredentials {
   struct redeInatel{      // Rede Inatel (testes de laboratório com possíveis instabilidades).
     const char* ssid      = "WLL-Inatel";
-    const char* password  = "inatelsemfio";
+    const char* password  = "************";
   }; redeInatel inatel;
   
   struct redeIgor {       // Rede Celular (testes de laboratório com ponto de acesso próximo).
     const char* ssid      = "Igor's Galaxy A54 5G";
-    const char* password  = "12345678";
+    const char* password  = "********";
   };  redeIgor local;
 
   struct redeDomestica {  // Rede Doméstica (testes em casa).
     const char* ssid      = "Igor";
-    const char* password  = "souza270";
+    const char* password  = "********";
   }; redeDomestica domestica;
 };  WiFiCredentials credenciais;
 
